@@ -3,23 +3,22 @@ import React from "react";
 import Header from "../Header/Header";
 import Nav from "../Nav/Nav";
 import Footer from "../Footer/Footer";
+import Content from "../Content/Content";
 
 import currentYear from "../../helpers/currentYear/currentYear";
 
 import navItems from "../../mock/menu.json";
 
-console.log(currentYear);
-
 function App() {
   return (
     <div>
+      <Header>
+        <Nav navItems={navItems} />
+      </Header>
       <main>
-        <Header>
-          <Nav navItems={navItems} />
-        </Header>
-
-        <Footer getCurrentYear={currentYear()} />
+        <Content />
       </main>
+      <Footer getCurrentYear={currentYear()} />
     </div>
   );
 }

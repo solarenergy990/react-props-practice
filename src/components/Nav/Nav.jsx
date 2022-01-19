@@ -7,12 +7,14 @@ const Nav = ({ navItems }) => {
       <nav className={s.nav}>
         <ul className={s.list}>
           {navItems.map((nav) => {
-            console.log(nav);
+            {
+              /* console.log(nav); */
+            }
             const { title, link, id } = nav;
             return (
               <li key={id}>
                 <div>
-                  <a class="btn btn-primary" href={link} role="button">
+                  <a className="btn btn-primary" href={link} role="button">
                     {title}
                   </a>
                 </div>

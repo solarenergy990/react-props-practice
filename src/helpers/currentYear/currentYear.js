@@ -1,7 +1,7 @@
 const getCurrentYear = () => {
-  const date = new Date();
+  const date = new Date().getFullYear();
 
-  return date.getFullYear();
+  return date;
 };
 
 export default getCurrentYear;

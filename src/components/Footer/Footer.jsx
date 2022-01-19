@@ -1,11 +1,10 @@
 import React from "react";
 
-const Footer = (getCurrentYear) => {
-  const { onGetCurrentYear } = getCurrentYear;
+const Footer = ({ getCurrentYear }) => {
   return (
     <footer>
       <div>
-        <span>@copyright all rights reserved {onGetCurrentYear}.</span>
+        <span>@copyright all rights reserved {getCurrentYear}.</span>
       </div>
     </footer>
   );
