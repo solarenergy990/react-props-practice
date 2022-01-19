@@ -1,0 +1,15 @@
+.title {
+  display: flex;
+  justify-content: center;
+}
+
+.header {
+  height: 550px;
+}
+
+.wrapper {
+  margin: auto;
+  width: 250px;
+  height: 250px;
+  fill: black;
+}

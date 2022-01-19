@@ -1,0 +1,7 @@
+[
+  { "title": "News", "link": "/news", "id": "1" },
+  { "title": "Our team", "link": "/our-team", "id": "2" },
+  { "title": "Our partners", "link": "/our-partners", "id": "3" },
+  { "title": "About Us", "link": "/about-us", "id": "4" },
+  { "title": "Portfolio", "link": "/portfolio", "id": "5" }
+]

@@ -1,0 +1,13 @@
+.nav {
+  /* display: flex;
+  justify-content: right;
+
+  width: 50vh; */
+}
+
+.list {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 24px;
+  margin-top: 24px;
+}

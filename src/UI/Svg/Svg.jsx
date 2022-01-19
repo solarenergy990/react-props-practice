@@ -1,6 +1,6 @@
 import s from "./Svg.module.css";
 
-//   'icon-logo',
+//   'logo',
 
 // Social icon
 //   'icon-facebook-black',
@@ -23,8 +23,10 @@ import s from "./Svg.module.css";
 
 const Svg = ({ iconName }) => {
   return (
-    <svg viewBox="0 0 28.3 28.3" className={s[`${iconName}`]}>
+    <svg viewBox="0 0 38 38" className={s[`${iconName}`]}>
       <use xlinkHref={`/sprite.svg#${iconName}`} />
     </svg>
   );
 };
+
+export default Svg;
