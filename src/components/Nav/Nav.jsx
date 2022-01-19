@@ -7,9 +7,6 @@ const Nav = ({ navItems }) => {
       <nav className={s.nav}>
         <ul className={s.list}>
           {navItems.map((nav) => {
-            {
-              /* console.log(nav); */
-            }
             const { title, link, id } = nav;
             return (
               <li key={id}>
