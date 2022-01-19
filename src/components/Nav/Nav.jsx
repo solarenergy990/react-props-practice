@@ -12,7 +12,9 @@ const Nav = ({ navItems }) => {
             return (
               <li key={id}>
                 <div>
-                  <a href={link}>{title}</a>
+                  <a class="btn btn-primary" href={link} role="button">
+                    {title}
+                  </a>
                 </div>
               </li>
             );
