@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import s from "./Content.module.css";
 
 import Alert from "./Alert/Alert";
+import Cards from "./Cards/Cards";
 
 const Content = () => {
   const [activeButton, setActiveButton] = useState(false);
@@ -26,6 +27,8 @@ const Content = () => {
           onSetActiveButton={setActiveButton}
         />
       )}
+
+      <Cards />
     </div>
   );
 };
