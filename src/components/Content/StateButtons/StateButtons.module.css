@@ -1,0 +1,14 @@
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.button {
+  margin-bottom: 12px;
+}
+
+.text {
+  padding: 25px;
+}

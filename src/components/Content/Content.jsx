@@ -3,6 +3,7 @@ import s from "./Content.module.css";
 
 import Alert from "./Alert/Alert";
 import Cards from "./Cards/Cards";
+import StateButtons from "./StateButtons/StateButtons";
 
 const Content = () => {
   const [activeButton, setActiveButton] = useState(false);
@@ -20,15 +21,14 @@ const Content = () => {
           </button>
         </div>
       )}
-
       {activeButton && (
         <Alert
           onActiveButton={activeButton}
           onSetActiveButton={setActiveButton}
         />
       )}
-
       <Cards />
+      <StateButtons />
     </div>
   );
 };
