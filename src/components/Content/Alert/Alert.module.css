@@ -1,0 +1,18 @@
+.alert {
+  position: absolute;
+
+  top: 20px;
+  left: 0;
+}
+
+.button {
+  display: block;
+
+  background-color: green;
+  border: 0;
+  border-radius: 4px;
+  color: bisque;
+
+  padding: 12px 24px;
+  margin-top: 12px;
+}
