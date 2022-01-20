@@ -14,9 +14,7 @@ const Card = ({ catsImg }) => {
             bulk of the card's content.
           </p>
           <p className="card-text">Likes: {likes}</p>
-          {/* <a href="#" className="btn btn-primary">
-            Переход куда-нибудь
-          </a> */}
+
           <button type="button" className="btn btn-primary">
             Some button
           </button>

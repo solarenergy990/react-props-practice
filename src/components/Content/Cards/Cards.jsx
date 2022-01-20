@@ -9,8 +9,6 @@ const Cards = () => {
   const [cats, setCats] = useState(null);
   const [activeButton, setActiveButton] = useState(false);
 
-  console.log(cats);
-
   const onHandleClick = () => {
     setActiveButton(true);
   };
@@ -28,18 +26,27 @@ const Cards = () => {
 
   return (
     <div>
-      <button
-        type="button"
-        className="btn btn-primary"
-        onClick={() => onHandleClick()}
-      >
-        Team Mates
-      </button>
+      {!cats && (
+        <div className={s.wrapper}>
+          <button
+            type="button"
+            className="btn btn-primary"
+            onClick={() => onHandleClick()}
+          >
+            Team Mates
+          </button>
+        </div>
+      )}
 
       <ul className={s.list}>
         {cats &&
           cats.map((cat) => {
-            return <Card catsImg={cat} />;
+            const { id } = cat;
+            return (
+              <div key={id}>
+                <Card catsImg={cat} />
+              </div>
+            );
           })}
       </ul>
     </div>
